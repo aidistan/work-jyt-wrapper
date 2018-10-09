@@ -8,6 +8,7 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -16,6 +17,7 @@ import android.webkit.WebViewClient;
 public class MainActivity extends AppCompatActivity {
     private View mWelcomeView;
     private WebView mBrowserView;
+    private Boolean mExitOnNextBackPressed = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,25 @@ public class MainActivity extends AppCompatActivity {
 
         hideSystemControls();
         loadTargetWebsite();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mBrowserView.canGoBack()) {
+            mBrowserView.goBack();
+        } else if (mExitOnNextBackPressed) {
+            super.onBackPressed();
+        } else {
+            mExitOnNextBackPressed = true;
+
+            Toast.makeText(this, "再按一次退出应用", Toast.LENGTH_SHORT).show();
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    mExitOnNextBackPressed = false;
+                }
+            }, 2000);
+        }
     }
 
     protected void hideSystemControls() {
@@ -82,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
             }
-        }, 500);
+        }, 300);
     }
 
     private class WrapperClient extends WebViewClient {
