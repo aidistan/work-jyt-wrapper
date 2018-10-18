@@ -23,21 +23,40 @@
             android:src="@mipmap/background"/>
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="36sp"
-            android:layout_marginTop="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_gravity="right"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="15sp"
+            android:alpha="0.318"
             android:scaleType="fitCenter"
-            android:src="@mipmap/banner"/>
+            android:src="@mipmap/logo_tcsj" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="85sp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/title"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="160sp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="85sp"
             android:text="@string/welcome_title"
             android:textAlignment="center"
             android:textColor="#ffffff"
-            android:textSize="36sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginBottom="25sp"
+            android:layout_gravity="bottom"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/logo_jyt"/>
     </FrameLayout>
 
 </FrameLayout>
