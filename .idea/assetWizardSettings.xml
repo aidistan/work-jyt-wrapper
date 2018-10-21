@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="60" />
+                                                <entry key="scalingPercent" value="54" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -34,7 +34,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundImage" value="C:\Workspace\work-jyt-wrapper\app\src\main\res\drawable\ic_launcher_background.xml" />
-                                      <entry key="foregroundImage" value="C:\Workspace\work-jyt-wrapper\app\src\main\res\mipmap-anydpi-v26\logo.png" />
+                                      <entry key="foregroundImage" value="C:\Users\aidistan\Desktop\white.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
