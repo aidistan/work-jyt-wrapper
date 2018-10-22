@@ -24,7 +24,7 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="25sp"
+            android:layout_height="18sp"
             android:layout_gravity="right"
             android:layout_marginTop="15sp"
             android:layout_marginRight="15sp"
@@ -35,13 +35,13 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="50sp"
+            android:layout_marginBottom="36sp"
             android:scaleType="fitCenter"
             android:src="@mipmap/title"/>
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="50sp"
+            android:layout_height="36sp"
             android:layout_marginBottom="25sp"
             android:layout_gravity="bottom"
             android:scaleType="fitCenter"
